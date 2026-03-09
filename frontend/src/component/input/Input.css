@@ -1,0 +1,25 @@
+.form-container {
+  max-width: 300px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.label1 {
+  font-weight: 500;
+}
+input {
+  outline: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  width: 100%;
+  border: 1.5px solid #ff1f1f;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}

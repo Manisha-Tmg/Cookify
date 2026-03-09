@@ -1,0 +1,92 @@
+.profile-container-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 40px auto;
+  margin-left: 8rem;
+  font-family: "Arial", sans-serif;
+}
+
+.p-container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 20px;
+  padding: 20px;
+}
+
+.p-card {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+  text-align: center;
+}
+
+.p-header {
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+
+.p-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 10px rgba(0, 123, 255, 0.5);
+}
+
+h2 {
+  margin-top: 10px;
+  font-size: 22px;
+  color: #333;
+}
+
+.p-section {
+  background: #f9f9f9;
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+}
+
+.p-section h3 {
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.p-info {
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+}
+
+.p-info:last-child {
+  border-bottom: none;
+}
+
+.p-info strong {
+  color: #007bff;
+}
+
+.edit-btn {
+  position: absolute;
+  width: 100%;
+  max-width: 60px;
+
+  background-color: #670909;
+  color: rgb(0, 0, 0);
+  border: 1px solid;
+  padding: 6px 14px;
+
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.edit-btn:hover {
+  background-color: #680000;
+  color: rgb(0, 0, 0);
+}

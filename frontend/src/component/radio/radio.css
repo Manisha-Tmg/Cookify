@@ -1,0 +1,29 @@
+.form-container {
+  max-width: 300px;
+  margin: 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.form-container input[type="radio"] {
+  accent-color: #f3043a;
+  cursor: pointer;
+}
+
+.form-container label {
+  cursor: pointer;
+  font-size: 14px;
+}
+
+select {
+  outline: none;
+  border-radius: 6px;
+  padding: 10px 12px;
+  width: 100%;
+  border: 1.5px solid #ff1f1f;
+  font-size: 14px;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}

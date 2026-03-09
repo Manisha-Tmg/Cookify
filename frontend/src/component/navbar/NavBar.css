@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+section {
+  width: 100%;
+  height: 5vh;
+}
+.navbar {
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  right: 0;
+  left: 0;
+  background: white;
+  justify-content: space-between;
+  z-index: 1000;
+}
+.left-container {
+  display: flex;
+  cursor: pointer;
+
+  align-items: center;
+  margin: 7px 50px;
+}
+
+.flogo {
+  height: 50px;
+}
+
+.logo,
+.logo1,
+.logo2 {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.logo2 {
+  color: #4caf50;
+  /* color: #ff4c4c; */
+}
+
+.nav-links li a.active {
+  color: #ff1f1f;
+}
+
+.nav-links li a.active::after {
+  width: 100%;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  font-weight: bold;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+.btn {
+  background-color: #ffffff;
+  color: #ff1f1f;
+  border-radius: 8px;
+  border-color: #ff1f1f;
+  font-weight: bold;
+  padding: 10px;
+  width: 100px;
+  border: 2px solid #ff1f1f;
+}
+
+.btn:hover {
+  background-color: #ff1f1f;
+  color: #ffffff;
+  border-color: #ff1f1f;
+  border: 2px solid #ff1f1f;
+}
+
+.auth-buttons {
+  display: flex;
+  margin: 7px 50px;
+
+  align-items: center;
+  gap: 20px;
+}
+
+.content {
+  margin-top: 70px;
+}
+
+.nav-profile-section {
+  display: flex;
+  align-items: center;
+}
+
+.nav-avatar-container {
+  margin-right: 1rem;
+  position: relative;
+  display: inline-block;
+}
+
+.nav-avatar-wrapperr {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-avatarr {
+  margin-right: 7rem;
+  margin-top: 0.3rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-imgg {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 62px;
+  right: 0;
+  background: rgb(176, 173, 173);
+  border-radius: 8px;
+  width: 200px;
+  padding: 8px;
+  text-align: left;
+  z-index: 1000;
+}
+
+.dropdown-header {
+  padding: 10px;
+  font-size: 14px;
+  color: rgb(255, 255, 255);
+  border-bottom: 1px solid gray;
+}
+
+.dropdown-item {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+}
+
+.dropdown-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.logout {
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+}

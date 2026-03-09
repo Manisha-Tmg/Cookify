@@ -1,0 +1,32 @@
+.drop-img {
+  width: 100%;
+  max-width: 300px;
+  margin: 40px auto;
+  padding: 30px 20px;
+  border: 2px dashed #cbd5e1;
+  border-radius: 10px;
+  background-color: #f9fafb;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.drop-img:hover {
+  border-color: #6366f1;
+  background-color: #eef2ff;
+}
+
+.drop-img p {
+  font-size: 15px;
+  color: #475569;
+  margin: 0;
+}
+
+.drop-img img {
+  margin-top: 16px;
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}

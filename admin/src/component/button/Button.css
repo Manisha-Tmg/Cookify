@@ -1,0 +1,16 @@
+.post-recipe {
+  text-transform: uppercase;
+
+  padding: 10px 12px;
+  width: 100%;
+  border: 2px solid #ff9100;
+  color: #ffffff;
+  font-size: large;
+  background-color: #ff9100;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.post-recipe:hover {
+  background-color: #e58a12;
+  border: 2px solid #e58a12;
+}

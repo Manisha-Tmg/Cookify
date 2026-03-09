@@ -1,0 +1,47 @@
+.about-us {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 50px;
+}
+.about {
+  display: flex;
+}
+.us {
+  text-align: justify;
+}
+
+.h1 {
+  font-size: 3rem;
+  color: #000000;
+  padding: 20px 20px 20px 20px;
+}
+
+.ptag {
+  font-size: 1rem;
+  color: #000000;
+  max-width: 60%;
+  padding: 20px 5px 20px 60px;
+  row-gap: 0%;
+  margin-bottom: 0;
+  text-align: justify;
+  display: inline-flex;
+}
+.img {
+  position: relative;
+  object-fit: contain;
+  display: inline-flex;
+  margin-bottom: 40px;
+  margin-top: 30px;
+  width: 550px;
+  height: 500px;
+  margin-left: 4px;
+  padding: 0px;
+  vertical-align: middle;
+}
+.h {
+  display: inline;
+  color: #ff1f1f;
+  font-family: mv boli;
+
+  font-size: 3rem;
+}

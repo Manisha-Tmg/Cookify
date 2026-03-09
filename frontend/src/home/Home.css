@@ -1,0 +1,56 @@
+.hero-section {
+  display: flex;
+  width: 100%;
+  padding-top: 5%;
+}
+
+.main_image {
+  width: 60%;
+  display: flex;
+  padding: 5px 5px 5px 5px;
+  height: 350px;
+  margin-left: 10px;
+  position: relative;
+}
+.highlight {
+  margin: 20px 0px 10px 100px; /*top,right,bottom.left*/
+  font-size: 2.94rem;
+  color: #000000;
+  align-items: center;
+  gap: 5px;
+}
+.highlight span {
+  color: #ff1f1f;
+  font-family: mv boli;
+}
+
+.easy {
+  color: #ff1f1f;
+}
+.hero-text {
+  width: 100%;
+}
+
+.hero-text p {
+  margin: 15px 0px 10px 100px; /*top,right,bottom.left*/
+  width: 100% vw;
+  text-align: justify;
+  position: relative;
+  line-height: 22px;
+}
+
+.hero-section button {
+  padding: 15px 15px 15px 15px;
+  background-color: #ff4c4c;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 15px 0px 10px 100px;
+}
+
+.hero-section button:hover {
+  background: #ff1f1f;
+}
