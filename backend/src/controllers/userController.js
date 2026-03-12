@@ -161,7 +161,6 @@ export const readAllUserController = expressAsyncHandler(
 export const readSpecificUserController = expressAsyncHandler(
   async (req, res, next) => {
     const result = await User.findById(req.params.id);
-    console.log(req.params.id);
 
     res.status(200).json({
       sucess: true,

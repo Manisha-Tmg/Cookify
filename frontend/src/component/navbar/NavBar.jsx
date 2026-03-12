@@ -9,40 +9,44 @@ import { API } from "../../config";
 const NavBar = () => {
   const [isLogin, setIsLogin] = useState(false);
   const [profileImage, setProfileImage] = useState(null);
-  const [email, setEmail] = useState("null");
+  const [email, setEmail] = useState("");
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   let token = localStorage.getItem("token");
-  let id = localStorage.getItem("id");
   const dropdownRef = useRef(null);
 
   const navigate = useNavigate();
+  const getData = async () => {
+    try {
+      const result = await axios({
+        url: `${API}/user/my-profile`,
+        method: "get",
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      });
+
+      setProfileImage(result.data.result.image);
+      setEmail(result.data.result.email);
+    } catch (error) {
+      setIsLogin(false);
+    }
+  };
 
   useEffect(() => {
-    const getData = async () => {
-      if (!token && !id) {
-        setIsLogin(false);
-        return;
-      }
-      try {
-        const result = await axios.get(`${API}/user/my-profile`, {
-          headers: {
-            Authorization: `Bearer ${token}`,
-          },
-        });
-        setProfileImage(result.data.result.image);
-        setEmail(result.data.result.email);
-      } catch (error) {
-        toast.error(("Profile fetch error:", error));
-        setIsLogin(false);
-      }
-    };
     if (token) {
       setIsLogin(true);
       getData();
-    } else {
-      setIsLogin(false);
     }
-  }, []);
+  }, [token]);
+
+  // useEffect(() => {
+  //   if (token) {
+  //     setIsLogin(true);
+  //     getData();
+  //   } else {
+  //     setIsLogin(false);
+  //   }
+  // }, [token]);
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };

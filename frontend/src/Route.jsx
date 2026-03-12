@@ -27,7 +27,7 @@ const MyRoute = () => {
             <Route path={"verify-user"} element={<VerifyUser />}></Route>
             <Route path={"login"} element={<UserLogin />}></Route>
             <Route path={"my-profile"} element={<MyProfile />}></Route>
-            <Route path={"my-recipe"} element={<MyRecipe />}></Route>
+            <Route path={"my-recipe"} element={<MyRecipe />}></Route>{" "}
             <Route
               path={"change-password"}
               element={<ChangePassword />}
@@ -50,12 +50,12 @@ const MyRoute = () => {
           <Route path="recipe">
             <Route index element={<ReadAllRecipe />}></Route>
             <Route path={"add-recipe"} element={<AddRecipe />}></Route>
-            <Route path={":id"} element={<RecipeDetails />}></Route>
+            <Route path={":id"} element={<RecipeDetails />}></Route>{" "}
+            <Route path={"create/:id"} element={<ReviewForm />}></Route>
             <Route path={"update/:id"} element={<AddRecipe />}></Route>
           </Route>
           <Route path="review">
             {/* <Route index element={<ReadAllReview />}></Route> */}
-            <Route path={"create"} element={<ReviewForm />}></Route>
             {/*  <Route path={":id"} element={<ReviewDetails />}></Route>
             <Route path={"update/:id"} element={<ReviewForm />}></Route> */}
           </Route>

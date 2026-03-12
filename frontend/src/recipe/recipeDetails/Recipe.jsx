@@ -1,4 +1,4 @@
-import Rating from "../rating/Rating";
+import Rating from "../../component/rating/Rating";
 import "../recipeDetails/Recipedetails.css";
 
 const RecipeList = ({

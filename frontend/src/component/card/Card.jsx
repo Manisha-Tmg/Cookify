@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import img from "../../assets/Chicken.jpg";
 import "../card/Card.css";
-import Rating from "../../recipe/rating/Rating";
+import Rating from "../rating/Rating";
 
 const Card = ({ image, title, description, id, ratings }) => {
   const navigate = useNavigate();

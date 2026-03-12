@@ -29,6 +29,7 @@ const RecipeDetails = () => {
       <BackBtn label={"Recipe Details"} />
       <div className="recipe-container">
         <RecipeList
+          id={recipes.id}
           title={recipes.title}
           ingredients={recipes.ingredients}
           instructions={recipes.instructions}

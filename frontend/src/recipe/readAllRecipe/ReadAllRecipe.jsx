@@ -37,7 +37,7 @@ const ReadAllRecipe = () => {
               description={item.description}
               image={item.image}
               id={item.id}
-              ratings={recipeReview?.ratings}
+              ratings={recipeReview?.rating}
             />
           );
         })}
