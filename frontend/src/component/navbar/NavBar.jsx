@@ -39,14 +39,6 @@ const NavBar = () => {
     }
   }, [token]);
 
-  // useEffect(() => {
-  //   if (token) {
-  //     setIsLogin(true);
-  //     getData();
-  //   } else {
-  //     setIsLogin(false);
-  //   }
-  // }, [token]);
   const toggleDropdown = () => {
     setIsDropdownOpen(!isDropdownOpen);
   };
